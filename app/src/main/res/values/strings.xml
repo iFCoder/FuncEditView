@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TimePicker</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="time_set">选择时间</string>
+    <string name="cancel">取消</string>
+    <string name="time">Time : </string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+   <jp.wasabeef.richeditor.RichEditor
+       android:id="@+id/editor"
+       android:layout_above="@+id/func_ll"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+   <LinearLayout
+       android:id="@+id/func_ll"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal">
+
+      <ImageView
+          android:id="@+id/test_bold"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:paddingBottom="8dp"
+          android:paddingTop="8dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/bold"/>
+
+      <ImageView
+          android:id="@+id/test_lean"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:paddingBottom="8dp"
+          android:paddingTop="8dp"
+          android:src="@mipmap/lean"/>
+
+      <ImageView
+          android:id="@+id/test_underline"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:paddingBottom="8dp"
+          android:paddingTop="8dp"
+          android:src="@mipmap/underline"/>
+
+      <ImageView
+          android:id="@+id/test_image"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:paddingBottom="8dp"
+          android:paddingTop="8dp"
+          android:src="@mipmap/photo"/>
+
+      <ImageView
+          android:id="@+id/test_light"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:paddingBottom="8dp"
+          android:paddingTop="8dp"
+          android:src="@mipmap/light"/>
+
+      <ImageView
+          android:id="@+id/test_font_size"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:paddingBottom="8dp"
+          android:paddingTop="8dp"
+          android:src="@mipmap/font_size"/>
+
+      <ImageView
+          android:id="@+id/test_delete"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:paddingBottom="8dp"
+          android:paddingTop="8dp"
+          android:src="@mipmap/delete"/>
+      <ImageView
+          android:id="@+id/test_list_ul"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:paddingBottom="8dp"
+          android:paddingTop="8dp"
+          android:src="@mipmap/list_ul"/>
+
+      <ImageView
+          android:id="@+id/test_list_ol"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:paddingBottom="8dp"
+          android:paddingTop="8dp"
+          android:src="@mipmap/list_ol"/>
+   </LinearLayout>
+
+
+</RelativeLayout>

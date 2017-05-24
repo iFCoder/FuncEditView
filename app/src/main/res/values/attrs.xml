@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FuncEditView">
+        <attr name="funcTextColor" format="color"/>  <!--编辑框输入颜色-->
+        <attr name="funcHintColor" format="color"/>  <!--预显示字体颜色-->
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/func_ll">
+        <EditText
+            android:id="@+id/func_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="请输入"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/func_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bold"/>
+
+        <ImageView
+            android:id="@+id/btn_lean"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:src="@mipmap/lean"/>
+
+        <ImageView
+            android:id="@+id/btn_underline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:src="@mipmap/underline"/>
+
+        <ImageView
+            android:id="@+id/btn_image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:src="@mipmap/photo"/>
+
+        <ImageView
+            android:id="@+id/btn_light"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:src="@mipmap/light"/>
+
+        <ImageView
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp"
+            android:src="@mipmap/delete"/>
+    </LinearLayout>
+
+</RelativeLayout>
