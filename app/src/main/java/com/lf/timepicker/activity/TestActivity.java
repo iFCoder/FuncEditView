@@ -107,9 +107,39 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
         mEditor.setOnTextChangeListener(new RichEditor.OnTextChangeListener() {
             @Override
             public void onTextChange(String text) {
+                if (TextUtils.isEmpty(text)) {
+                    restoreState();
+                }
                 content = text;
             }
         });
+    }
+    
+    private void restoreState() {
+        if(isClickBold){
+            isClickBold = false;
+            tBold.setImageResource(R.mipmap.bold);
+        }
+        if(isClickLean){
+            isClickLean = false;
+            tLean.setImageResource(R.mipmap.lean);
+        }
+        if(isClickUnderLine){
+            isClickUnderLine = false;
+            tUnderline.setImageResource(R.mipmap.underline);
+        }
+        if(isClickDelete){
+            isClickDelete = false;
+            tDelete.setImageResource(R.mipmap.delete);
+        }
+        if(isClickListUl){
+            isClickListUl = false;
+            tListUl.setImageResource(R.mipmap.list_ul);
+        }
+        if(isClickListOl){
+            isClickListOl = false;
+            tListOl.setImageResource(R.mipmap.list_ol);
+        }
     }
 
 
